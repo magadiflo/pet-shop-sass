@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+//* outline, un contorno es una línea que se dibuja alrededor de los elementos, FUERA de los bordes, 
+//*          para hacer que el elemento "se destaque".
+//* linear, especifica un efecto de transición con la misma velocidad de principio a fin.
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+$carrot-color: #e67e22;
+$black: #130f40;
+$white: #fff;
+$light-color: #666;
+$light-bg: #eee;
+$border: .2rem solid $black;
+$box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
