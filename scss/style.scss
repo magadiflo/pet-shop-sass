@@ -61,4 +61,40 @@ html {
     left: 0;
     right: 0;
     z-index: 1000;
+
+    .logo {
+        font-size: 2.5rem;
+        color: $black;
+        font-weight: bolder;
+
+        i {
+            color: $carrot-color;
+        }
+    }
+
+    .navbar a {
+        margin: 0 1rem;
+        font-size: 1.7rem;
+        color: $light-color;
+
+        &:hover {
+            color: $carrot-color;
+        }
+    }
+
+    .icons a,
+    .icons div {
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+        color: $black;
+        cursor: pointer;
+
+        &:hover {
+            color: $carrot-color;
+        }
+    }
+}
+
+#menu-btn {
+    display: none;
 }
