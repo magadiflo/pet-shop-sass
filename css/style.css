@@ -40,36 +40,33 @@ html::-webkit-scrollbar-thumb {
   right: 0;
   z-index: 1000;
 }
-.header .logo {
+.header__logo {
   font-size: 2.5rem;
   color: #130f40;
   font-weight: bolder;
 }
-.header .logo i {
+.header__logo i {
   color: #e67e22;
 }
-.header .navbar a {
+.header__navbar a {
   margin: 0 1rem;
   font-size: 1.7rem;
   color: #666;
 }
-.header .navbar a:hover {
+.header__navbar a:hover {
   color: #e67e22;
 }
-.header .icons a,
-.header .icons div {
+.header__icons__menu-btn {
+  display: none;
+}
+.header__icons__menu-btn, .header__icons__shopping-cart, .header__icons__login-btn {
   font-size: 2.5rem;
   margin-left: 1.5rem;
   color: #130f40;
   cursor: pointer;
 }
-.header .icons a:hover,
-.header .icons div:hover {
+.header__icons__menu-btn:hover, .header__icons__shopping-cart:hover, .header__icons__login-btn:hover {
   color: #e67e22;
-}
-
-#menu-btn {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

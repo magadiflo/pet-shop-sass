@@ -62,7 +62,7 @@ html {
     right: 0;
     z-index: 1000;
 
-    .logo {
+    &__logo {
         font-size: 2.5rem;
         color: $black;
         font-weight: bolder;
@@ -72,7 +72,7 @@ html {
         }
     }
 
-    .navbar a {
+    &__navbar a {
         margin: 0 1rem;
         font-size: 1.7rem;
         color: $light-color;
@@ -82,19 +82,25 @@ html {
         }
     }
 
-    .icons a,
-    .icons div {
-        font-size: 2.5rem;
-        margin-left: 1.5rem;
-        color: $black;
-        cursor: pointer;
+    &__icons {
 
-        &:hover {
+        &__menu-btn {
+            display: none;
+        }
+
+        &__menu-btn,
+        &__shopping-cart,
+        &__login-btn {
+            font-size: 2.5rem;
+            margin-left: 1.5rem;
+            color: $black;
+            cursor: pointer;
+        }
+
+        &__menu-btn:hover,
+        &__shopping-cart:hover,
+        &__login-btn:hover {
             color: $carrot-color;
         }
     }
-}
-
-#menu-btn {
-    display: none;
 }
