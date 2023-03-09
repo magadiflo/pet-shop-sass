@@ -11,6 +11,12 @@
   transition: 0.2s linear;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -78,6 +84,7 @@ html::-webkit-scrollbar-thumb {
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  display: none;
 }
 .login-form__title {
   color: #130f40;
@@ -131,6 +138,10 @@ html::-webkit-scrollbar-thumb {
 }
 .login-form__submit:hover {
   color: #fff;
+}
+.login-form--active {
+  display: block;
+  animation: fadeIn 0.4s linear;
 }
 
 .remember-container {
