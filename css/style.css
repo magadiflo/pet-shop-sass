@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  border: none;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.2s linear;
@@ -67,6 +68,96 @@ html::-webkit-scrollbar-thumb {
 }
 .header__icons__menu-btn:hover, .header__icons__shopping-cart:hover, .header__icons__login-btn:hover {
   color: #e67e22;
+}
+
+.login-form {
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.login-form__title {
+  color: #130f40;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.login-form__email, .login-form__password {
+  width: 100%;
+  border-bottom: 0.2rem solid #130f40;
+  border-width: 0.1rem;
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: #130f40;
+  text-transform: none;
+}
+.login-form__submit {
+  border: 0.2rem solid #130f40;
+  display: inline-block;
+  padding: 0.8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  background: none;
+  color: #130f40;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+.login-form__submit:hover {
+  background-color: #130f40;
+}
+.login-form__submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #130f40;
+  z-index: -1;
+  transition: 0.2s linear;
+  clip-path: circle(0% at 0% 5%);
+}
+.login-form__submit:hover::before {
+  clip-path: circle(100%);
+}
+.login-form__submit:hover {
+  color: #fff;
+}
+
+.remember-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.remember-container label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.links-container__forget-password, .links-container__sing-up {
+  font-size: 1.4rem;
+  color: #e67e22;
+}
+.links-container__forget-password:hover, .links-container__sing-up:hover {
+  color: #130f40;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
