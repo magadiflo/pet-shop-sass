@@ -293,6 +293,46 @@ section {
     }
 }
 
+//* about section
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-content-image {
+    flex: 1 1 40rem;
+    
+    &__img {
+        width: 100%;
+    }
+}
+
+.about-content {
+    flex: 1 1 40rem;
+
+    &__title {
+        color: $black;
+        font-size: 4rem;
+
+        span {
+            color: $carrot-color;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: $light-color;
+        padding: 1rem 0;
+        line-height: 2;
+    }
+
+    &__btn-read-more {
+        @include button();
+    }
+}
+
 //* Media queries
 @media (max-width: 991px) {
     html {
