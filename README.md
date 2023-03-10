@@ -5,3 +5,7 @@ Tutorial tomado del canal de youtube de **Mr. Web Designer**
 ```
 https://fontawesome.com/v5/search
 ```
+
+# [Generador de CSS CLIP-PATH MAKER](https://bennettfeely.com/clippy/)
+Aquí usamos la opción Trapezoid para mostrar y ocultar el menú
+cuando está en modo móvil
