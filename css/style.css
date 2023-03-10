@@ -324,6 +324,94 @@ section {
   color: #fff;
 }
 
+.dog-food,
+.cat-food {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.dog-food-content-image {
+  flex: 1 1 40rem;
+}
+.dog-food-content-image img {
+  width: 100%;
+}
+
+.dog-food-content {
+  flex: 1 1 40rem;
+  text-align: center;
+  padding: 2rem;
+}
+.dog-food-content__title {
+  font-size: 3.5rem;
+  color: #130f40;
+}
+.dog-food-content__title span {
+  color: #e67e22;
+}
+.dog-food-content__text {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #666;
+  font-size: 1.6rem;
+}
+.dog-food-content__amount {
+  font-size: 3.5rem;
+  color: #130f40;
+  padding: 0.5rem 0;
+}
+.dog-food-content__link-dog img {
+  height: 15rem;
+  margin-top: 1rem;
+}
+.dog-food-content__link-dog:hover img {
+  transform: rotate(15deg);
+}
+
+.cat-food-content-image {
+  flex: 1 1 40rem;
+}
+.cat-food-content-image img {
+  width: 100%;
+}
+
+.cat-food-content {
+  flex: 1 1 40rem;
+  text-align: center;
+  padding: 2rem;
+}
+.cat-food-content__title {
+  font-size: 3.5rem;
+  color: #130f40;
+}
+.cat-food-content__title span {
+  color: #e67e22;
+}
+.cat-food-content__text {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #666;
+  font-size: 1.6rem;
+}
+.cat-food-content__amount {
+  font-size: 3.5rem;
+  color: #130f40;
+  padding: 0.5rem 0;
+}
+.cat-food-content__link-cat img {
+  height: 15rem;
+  margin-top: 1rem;
+}
+.cat-food-content__link-cat:hover img {
+  transform: rotate(15deg);
+}
+
+.cat-food {
+  flex-wrap: wrap-reverse;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;

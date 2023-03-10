@@ -91,6 +91,56 @@ $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     }
 }
 
+@mixin cat-dog-section($animal: dog) {
+
+    .#{$animal}-food-content-image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .#{$animal}-food-content {
+        flex: 1 1 40rem;
+        text-align: center;
+        padding: 2rem;
+
+        &__title {
+            font-size: 3.5rem;
+            color: $black;
+
+            span {
+                color: $carrot-color;
+            }
+        }
+
+        &__text {
+            padding: 1rem 0;
+            line-height: 2;
+            color: $light-color;
+            font-size: 1.6rem;
+        }
+
+        &__amount {
+            font-size: 3.5rem;
+            color: $black;
+            padding: .5rem 0;
+        }
+
+        &__link-#{$animal} {
+            img {
+                height: 15rem;
+                margin-top: 1rem;
+            }
+
+            &:hover img {
+                transform: rotate(15deg);
+            }
+        }
+    }
+}
+
 @keyframes fadeIn {
     0% {
         transform: translateY(3rem);
@@ -303,7 +353,7 @@ section {
 
 .about-content-image {
     flex: 1 1 40rem;
-    
+
     &__img {
         width: 100%;
     }
@@ -331,6 +381,22 @@ section {
     &__btn-read-more {
         @include button();
     }
+}
+
+//* dog and cat food banner section starts
+.dog-food,
+.cat-food {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+@include cat-dog-section(dog);
+@include cat-dog-section(cat);
+
+.cat-food {
+    flex-wrap: wrap-reverse;
 }
 
 //* Media queries
